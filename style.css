@@ -50,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./images/fondo1.jpg");
   background-position: center center;
   background-size: cover;
@@ -230,8 +230,27 @@
   padding: 12px;
   font-size: 10px;
 }
+.recuadro_blog{
+  color: black;
+  font-size: larger;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+.blog_titulo{
+margin-top: 40px;
+}
 .blog {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: white;
+  align-content: space-around;
   flex-direction: row;
-  flex-wrap: nowrap;
+  min-height: 75vh;
+}
 }
