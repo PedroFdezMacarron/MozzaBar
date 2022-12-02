@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-* {
+*{
+  list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.restaurante {
-  width: 85vh;
-  margin: 0 auto;
+.restaurante {  
   background-color: #1e1d1c;
 }
 .cabecera {
@@ -17,11 +18,18 @@
   align-items: center;
   justify-content: space-around;
   background-color: #1e1d1c;
-  width: 85vh;
+  position:fixed;
+  width: 100%;
 }
-.logo {
-  display: flex;
-  justify-content: center;
+.img__logo{
+  max-height: 80px;
+}
+.sublogo{
+    display: flex;
+    justify-content: center;
+}
+.img__sublogo{
+    max-width: 25%;
 }
 .nav {
   display: flex;
@@ -46,114 +54,88 @@
     url("./images/fondo1.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
+  background-repeat: no-repeat;  
+  height:calc(100vh);
 }
 .presentacion__titulo {
   font-size: 55px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
+  color: coral;
+  
 }
+.presentacion__subtitulo{
+    font-size: 25px;       
+ }
 .presentacion__rte {
   font-size: 65px;
-  font-family: "Dancing Script";
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .concepto {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-image: url("./images/fondo2.jpg");
   background-repeat: repeat;
-  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 100vh;
 }
 .concepto__recuadro {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: #1e1d1c;
-  width: 50%;
-  height: 300px;
+  width:30%;
+  padding: 40px;
 }
 .concepto__titulo {
   background-color: #1e1d1c;
-  color: beige;
-  width: 50%;
+  color: beige;  
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
+  font-size: 25px;
 }
 .concepto__explica {
   background-color: #1e1d1c;
   color: beige;
-  width: 50%;
+  
+  padding-bottom: 30px;
 }
 
 .galeria {
-  /* background-image: url("./images/fondo3.jpg");   
-    background-repeat: repeat;
-    height: 1500px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  */
+  padding: 20px;  
+  display: flex;
+  justify-content: center;
+  background-image: url("./images/fondo3.jpg");
+  background-repeat: repeat;
 }
-
-/*
-.galeria__recuadro{
-    display: grid;   
-    grid-template-columns: repeat(3, 1fr);    
-    column-gap: 10px;
-    row-gap: 10px;       
-    width: 90%;
-}
-*/
 
 .galeria__recuadro {
+  width: 70%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around; 
+  gap: 20px;
   align-items: flex-start;
-  background-image: url("./images/fondo3.jpg");
-  align-content: space-between;
-  gap: 50px;
-  padding: 50px;
 }
 
-.galeria__foto {
+.galeria__foto img {
+  max-width: 250px;
+  background-color: #1e1d1c;
 }
-
-/*
-
-.box{
-    background-color: green;
-    border: 3px solid red;
-}
-
-.foto4{    
-    grid-row: 2/span 2;
-    background-color: yellow;
-}
-.foto6{    
-    grid-column: 3/span 1;
-    grid-row: 2/span 2;
-    background-color: rebeccapurple;
-}
-*/
 
 .carta {
-  background-color: lightblue;
-  height: 800px;
+  background-color:white; 
   padding-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height:max-content;
 }
 .carta__titulo {
   text-align: center;
-  font-size: larger;
+  font-size: 30px;
   padding-bottom: 20px;
 }
 .carta__subtitulo {
@@ -163,22 +145,47 @@
   text-align: center;
   padding-bottom: 30px;
 }
+.carta__nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
 .carta__recuadro {
   align-items: flex-start;
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-image: url("./images/fondo4.jpg");
   column-gap: 20px;
   row-gap: 20px;
   padding: 20px;
+  
 }
 .carta__recuadro-columna {
-  background-color: lightblue;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 40px;;
+}
+.carta__texto-grupo {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.plato {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding-bottom: 8px;
 }
 .carta__pie {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .carta__botton {
   display: inline-block;
@@ -190,37 +197,41 @@
   padding: 12px;
   font-size: 10px;
 }
-.reservas{
-    height: 446px;
-    color: white;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* align-content: center; */
-    align-items: center;
+.reservas {
+  height: 446px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  align-items: center;
 }
-.reservas__titulo{
-    
+.reservas__titulo {
 }
-.reservas__recuadro{
-    display: flex;
-    flex-direction: row;   
-    align-items: center;
+.reservas__recuadro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.reservas__field{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    color: white;
+.reservas__field {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: white;
 }
 .reservas__botton {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
-    background-color: white;
-    padding: 12px;
-    font-size: 10px;
-  }
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  background-color: white;
+  padding: 12px;
+  font-size: 10px;
+}
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
