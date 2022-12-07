@@ -253,4 +253,15 @@ margin-top: 40px;
   flex-direction: row;
   min-height: 75vh;
 }
+
+.footer{
+ 
+}
+.contacto{
+ padding-top: 100px;
+ background-color: white;
+
+}
+.imgContacto{
+ width: 100%
 }
