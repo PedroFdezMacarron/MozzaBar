@@ -198,45 +198,119 @@
   font-size: 10px;
 }
 .reservas {
-  height: 446px;
+  height: 403px;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* align-content: center; */
   align-items: center;
+  align-content: center;
+  padding-top: 30px;
+  width: 100%
+
 }
 .reservas__titulo {
+  padding-bottom: 30px;
 }
+.reservas__form {
+  width: 100%;
+}
+
 .reservas__recuadro {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 30px;
 }
+.reservas__form {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 30px;
+}
+
+.reservas__aside{
+  display: flex;
+  flex-direction: column;
+  gap:20px
+
+}
+.reservas__aside_tit{
+  color: coral;
+
+}
+.reservas__aside_sub{
+  font-size: 20px;
+}
+
+.reservas__aside_dir{
+  font-size: 10px;
+  font-weight: normal;
+}
+
 .reservas__field {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   color: white;
+  gap:10px;
+  width: 100%;
 }
+
+.reservas__fields1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.reservas__fields2{
+  padding-bottom: 40px;
+}
+.fields1__1 {
+  width: 50%;   
+}
+select{
+  width: 100%;
+}
+
+.fields1__2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;   
+  width: 50%;
+ 
+}
+
+
+
 .reservas__botton {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  width: 200px;
   background-color: white;
-  padding: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 10px;
+  font-weight:500;
+  width: 100%;
 }
+.reservas__leyenda{
+  font-size: 12px;
+  text-align: justify;
+  
+}
+
+
+
+
 .recuadro_blog{
   color: black;
   font-size: larger;
   background-color: white;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
   justify-content: center;
   align-items: center;
 }
