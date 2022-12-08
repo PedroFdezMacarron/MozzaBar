@@ -254,14 +254,19 @@ margin-top: 40px;
   min-height: 75vh;
 }
 
-.footer{
- 
+footer{
+  padding-top: 50px;
+  font-size: 30PX;;
+  background-color: white;
+  text-align: center;
+ color: black;
 }
 .contacto{
- padding-top: 100px;
+ padding-top: 10px;
  background-color: white;
 
 }
 .imgContacto{
  width: 100%
+
 }
